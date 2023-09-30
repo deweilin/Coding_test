@@ -1,5 +1,5 @@
 # coding_test
-My solution to 3 Tasks:\
+My solution to 3 Tasks:
 
 
 Task1: Task1.pdf 
