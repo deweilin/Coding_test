@@ -1,0 +1,51 @@
+---
+title: "Task2"
+author: "Dewei Lin"
+date: "2023-09-30"
+output: pdf_document
+---
+
+
+## Reference: 
+
+https://github.com/ropensci/rtweet
+
+
+https://jtr13.github.io/cc21fall2/scrape-twitter-data-using-r.html
+
+GPT4
+
+
+## load libraries
+
+```{r}
+library(rtweet)
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(rtweet)
+library(twitteR)
+Sys.setenv(BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAGDqqAEAAAAAjIYBGwe54UnNoOTPaxANOdilbsg%3D0JuOrcyk8BCqDtxlMRP1YzNRnKcyaLs9v89MOORL2VA3LazKM4")
+```
+
+
+## scarp data from twitter using API
+
+```{r}
+API_key = "ebn3FsN3vuHCCk4ZKNJYcofLh" 
+API_secret = "eGSaaJjbNG7H7Kwrn721fefyUDrnFmT0HNTfEME0eiPFfkRtZg"
+Access_token = "1442609767491403783-qNdWJOHrpHktMxE7MrSTPQ7hPsgvst"
+Access_secret = "Q9i0NLGVQ8RszyGtMosleZGHmhAGsaEsJDvEVcTaotrBP"
+
+create_token(
+  app = "1707960964723724288raybcde",
+  consumer_key = "ebn3FsN3vuHCCk4ZKNJYcofLh",
+  consumer_secret = "eGSaaJjbNG7H7Kwrn721fefyUDrnFmT0HNTfEME0eiPFfkRtZg",
+  access_token = Access_token,
+  access_secret = Access_secret
+)
+#scrap data
+tweet_ids <- 1540348242960846849
+tweets_data <- lookup_tweets(tweet_ids)
+#I don't have access to this...
+```
